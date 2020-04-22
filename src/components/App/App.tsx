@@ -6,13 +6,13 @@ import Page from './Page';
 
 // pages
 import LandingPage from '../Pages/LandingPage';
-import Home from '../Pages/Home';
+import Portfolio from '../Pages/Portfolio';
 import About from '../Pages/About';
 import Contact from '../Pages/Contact';
 
 // add your page name here
 export interface PageNameProps {
-  pageNames: 'landingpage' | 'home' | 'about' | 'contact'
+  pageNames: 'landingpage' | 'portfolio' | 'about' | 'contact'
 }
 
 const App: React.FC = () => {
@@ -54,8 +54,8 @@ const App: React.FC = () => {
           <LandingPage setPage={setPage}/>
         </Page>
 
-        <Page style={pageStyle('home')}>
-          <Home />
+        <Page style={pageStyle('portfolio')}>
+          <Portfolio />
         </Page>
 
         <Page style={pageStyle('about')}>

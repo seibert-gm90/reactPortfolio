@@ -1,20 +1,33 @@
-import React from 'react';
+import React from "react";
 
 const Contact: React.FC = () => {
   return (
     <div>
-      <h1>Contact</h1>
-      <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, adipisci reiciendis est temporibus possimus aspernatur quidem? Aliquid maiores ea nisi amet eaque, autem magni ex maxime beatae ullam nostrum officia! Rem cumque corrupti maiores fugiat quidem minus fuga, molestiae aut ipsum dolores repellat inventore assumenda, iusto vel maxime error molestias soluta qui ratione? Culpa quaerat a illo eos nostrum impedit nesciunt expedita cupiditate ea eaque? Omnis, at eveniet illum, molestias dolor quo ut esse, ad repellat quibusdam dolores culpa debitis eius veritatis amet nisi commodi quisquam. Fugit, rerum. Pariatur earum minus exercitationem at modi. Impedit ex nihil aperiam perspiciatis quisquam?
-      </h3>
-
-      <form action="">
-        <input type="text"/>
-        <input type="text"/>
-        <button>SUBMIT</button>
-      </form>
-    </ div>
-  )
+      <div id="contact" className="row cover bottom">
+        <h2 className="text-center contact-header">Contact Me</h2>
+        <p className="text-center contact-email">
+          Get in touch with me{" "}
+          <span className="glyphicon glyphicon-arrow-right"></span>
+          <a href="mailto:jones.gm90@gmail.com">jones.gm90@gmail.com</a>{" "}
+        </p>
+        <div className="text-center contact-social-icons">
+          <p>Or find me on:</p>
+          <ul className="centered">
+            <a href="https://www.linkedin.com/in/gabrielle-jones-373ba8132/">
+              <li>
+                <i className="fa fa-linkedin-square"></i> LinkedIn
+              </li>
+            </a>
+            <a href="https://github.com/seibert-gm90">
+              <li>
+                <i className="fa fa-github"></i> Github
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;
